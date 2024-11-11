@@ -15,42 +15,54 @@
 
 <body>
     <div class="container">
-        <div class="login-section">
-            <header class="header">YOLLO</header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione temporibus autem recusandae rerum
-                numquam nobis, quia architecto cupiditate sint iure molestias, dolor ipsum unde doloribus laboriosam!
-                Neque aperiam ratione doloribus!</p>
-            <button class="login-button">Login</button>
-        </div>
-        <div class="registration-form">
-            <div class="name">
-                <div class="first-name">
-                    <p>First Name</p>
-                    <input type="text" id="first_name">
-                </div>
-                <div class="last-name">
-                    <p>Last Name</p>
-                    <input type="text" id="last_name">
-                </div>
+        <main class="main">
+            <div class="login-section">
+                <section class="section">
+                    <header class="header">
+                        <img src="./assets/yollo-logo.svg" alt="picture_of_an_owl">
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione temporibus autem recusandae rerum
+                        numquam nobis, quia architecto cupiditate sint iure molestias, dolor ipsum unde doloribus laboriosam!
+                        Neque aperiam ratione doloribus!</p>
+                    <button class="login-button">Login</button>
+                </section>
             </div>
-            <div class="email">
-                <div class="email">
-                    <p>Email</p>
-                    <input type="email">
-                </div>
+            <div class="registration-form">
+                <section class="section-2">
+                    <div class="register-section">
+                        <div class="name card">
+                            <div class="first-name">
+                                <p>First Name</p>
+                                <input type="text" id="first_name">
+                            </div>
+                            <div class="last-name card">
+                                <p>Last Name</p>
+                                <input type="text" id="last_name">
+                            </div>
+                        </div>
+                        <div class="email card">
+                            <div class="email">
+                                <p>Email</p>
+                                <input type="email">
+                            </div>
+                        </div>
+                        <div class="password card">
+                            <p>Password</p>
+                            <input type="text" id="pass">
+                        </div>
+                        <div class="checkbox card">
+                            <input type="checkbox" id="check" itemid="check_box">
+                            <p>I agree with the <span><a href="#"> terms and conditions</a></span></p>
+                            
+                        </div>
+                        <div class="register card">
+                            <button id="register_button">Register</button>
+                        </div>
+                    </div>
+                </section>
+                
             </div>
-            <div class="password">
-                <p>Password</p>
-                <input type="text" id="pass">
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" id="check" itemid="check_box">
-                <p>I agree with the <span><a href="#"> terms and conditions</a></span></p>
-            </div>
-            <div class="register">
-                <button id="register_button">Register</button>
-            </div>
-        </div>
+        </main>
     </div>
 </body>
 
