@@ -15,55 +15,60 @@
 
 <body>
     <div class="container">
-        <main class="main">
-            <div class="login-section">
-                <section class="section">
-                    <header class="header">
-                        <img src="./assets/yollo-logo.svg" alt="picture_of_an_owl">
-                    </header>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione temporibus autem recusandae rerum
-                        numquam nobis, quia architecto cupiditate sint iure molestias, dolor ipsum unde doloribus laboriosam!
-                        Neque aperiam ratione doloribus!</p>
-                    <button class="login-button">Login</button>
-                </section>
+        <div class="centered">
+          <div class="login-section">
+            <header class = "login-header">
+              <img src="./yollo.png" alt="A-nice-picture" />
+            </header>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+              dolorum a adipisci unde culpa, cum labore, id voluptate assumenda
+              obcaecati repudiandae at excepturi quam minima quo? Vitae numquam
+              quas quae quod suscipit saepe.
+            </p>
+            <button type="submit" id="login">Login</button>
+          </div>
+          <div class="register-section">
+            <header>
+              <h1>Registration Form</h1>
+            </header>
+            <div class="name">
+              <div class="firstName card">
+                <p>First Name</p>
+                <div class="stretchinput">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="lastName card">
+                <p>Last Name</p>
+                <div class="stretchinput">
+                  <input type="text" />
+                </div>
+  
+              </div>
             </div>
-            <div class="registration-form">
-                <section class="section-2">
-                    <div class="register-section">
-                        <div class="name card">
-                            <div class="first-name">
-                                <p>First Name</p>
-                                <input type="text" id="first_name">
-                            </div>
-                            <div class="last-name card">
-                                <p>Last Name</p>
-                                <input type="text" id="last_name">
-                            </div>
-                        </div>
-                        <div class="email card">
-                            <div class="email">
-                                <p>Email</p>
-                                <input type="email">
-                            </div>
-                        </div>
-                        <div class="password card">
-                            <p>Password</p>
-                            <input type="text" id="pass">
-                        </div>
-                        <div class="checkbox card">
-                            <input type="checkbox" id="check" itemid="check_box">
-                            <p>I agree with the <span><a href="#"> terms and conditions</a></span></p>
-                            
-                        </div>
-                        <div class="register card">
-                            <button id="register_button">Register</button>
-                        </div>
-                    </div>
-                </section>
-                
+            <div class="email">
+              <p>Email</p>
+              <div class="email-card-container">
+                <input type="email card" class="email-bar" />
+              </div>
             </div>
-        </main>
-    </div>
+            <div class="password card">
+              <p>Password</p>
+              <div class="stretchinput">
+                  <input type="text" />
+                </div>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="check" />
+              <p>
+                I agree with the <span><a href="#">terms and conditions</a></span>
+              </p>
+            </div>
+            <button type="button" id="submit">Submit</button>
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>
