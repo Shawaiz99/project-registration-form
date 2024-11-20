@@ -2,108 +2,113 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Nunito', sans-serif;
-}
-
-.container {
     height: 100vh;
-    width: 100vw;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.centered {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
-    gap: 0px;
-    margin-top: 300px;
-    margin-bottom: 300px;
-    box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .container {
+    width: 50%;
+    height: 55vh;
+    display: flex;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
-}
-
-.login-section {
-    width: 350px;
-    height: 250px;
+  }
+  
+  .login-section, .registration-section {
     flex: 1;
+  }
+  
+  .login-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: rgba(211, 211, 211, 0.146);
-}
-
-#login, #submit {
-    width: 50px;
-}
-
-.register-section {
-    width: 400px;
-    height: 250px;
-    flex: 1;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(211, 211, 211, 0.132);
+  }
+  
+  .login-section header {
+    margin-left: 25px;
+  }
+  
+  .login-section p {
+    margin-left: 25px;
+  }
+  
+  .login-section button {
+    height: 2rem;
+    width: 5rem;
+    margin-left: 25px;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+  }
+  
+  .registration-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-
-.name {
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .name-container {
     display: flex;
-    gap: 15px;
-}
-
-.stretchinput {
-    display: flex;
-}
-
-.stretchinput input{
+    gap: 10px;
+  }
+  
+  .name {
     flex: 1;
-}
-
-.name .card {
+  }
+  
+  .name input {
+    width: 100%;
+  }
+  
+  .name-container, .email, .password, .checkbox, .register-button {
     flex: 1;
-}
-
-.email-card-container {
+  }
+  
+  .register-button {
     display: flex;
-}
-
-.email-bar {
-    flex-direction: row;
-    flex: 1;
-}
-
-.checkbox {
-    display: flex;
-    gap: 5px;
-}
-
-#login {
-    background-color: aquamarine;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  .register-button button {
+    height: 2rem;
+    width: 7rem;
+    background-color: aqua;
     border: none;
     border-radius: 5px;
-    font-size: 24px;
-    width: 100px;
     color: white;
-}
-
-#submit {
-    background-color: aquamarine;
-    border: none;
-    border-radius: 5px;
-    font-size: 24px;
-    width: 100px;
-    color: white;
-    gap: 20px;
-}
-
-img {
-    height: 75px;
-    background-color: rgba(211, 211, 211, 0.146);
-}
+    font-size: 16px;
+  }
+  
+  header img {
+    height: 60px;
+    width: auto;
+    background-color: lightgray;
+  }
+  
+  .checkbox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .email-input {
+    width: 100%;
+  }
+  
+  .password-input {
+    width: 100%;
+  }
